@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adrián Moreno Palma | Portfolio</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">AMP</div>
+            <ul class="nav-links">
+                <li><a href="#about" data-i18n="nav.about">Sobre Mí</a></li>
+                <li><a href="#skills" data-i18n="nav.skills">Habilidades</a></li>
+                <li><a href="#projects" data-i18n="nav.projects">Proyectos</a></li>
+                <li><a href="#contact" data-i18n="nav.contact">Contacto</a></li>
+            </ul>
+            <div class="controls">
+                <button id="theme-toggle" class="btn-icon"><i class="fa-solid fa-moon"></i></button>
+                <button id="lang-toggle" class="btn-icon">EN</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero fade-in">
+            <div class="hero-content">
+                <h2 data-i18n="hero.greeting">Hola, soy</h2>
+                <h1>Adrián Moreno Palma</h1>
+                <p data-i18n="hero.role">Estudiante de Desarrollo de Aplicaciones Web</p>
+                <div class="social-links">
+                    <a href="https://github.com/ElTitoAdri" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/adri%C3%A1n-moreno-palma-4b123a33a/" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <a href="mailto:adrianmp333@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About & Education -->
+        <section id="about" class="fade-in">
+            <h2 class="section-title" data-i18n="about.title">Sobre Mí</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <p data-i18n="about.text">Soy un estudiante apasionado...</p>
+                </div>
+                <div class="card">
+                    <h3 data-i18n="education.title" style="margin-bottom: 1rem;">Estudios</h3>
+                    <div class="education-item">
+                        <i class="fa-solid fa-graduation-cap"
+                            style="color: var(--primary-color); margin-right: 0.5rem;"></i>
+                        <strong data-i18n="education.degree">DAW</strong>
+                        <p data-i18n="education.school">Instituto FOC</p>
+                        <small data-i18n="education.status">Estudiando...</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="fade-in">
+            <h2 class="section-title" data-i18n="skills.title">Habilidades</h2>
+            <div class="skills-grid">
+
+                <div class="skill-category card">
+                    <h3><i class="fa-solid fa-code"></i> <span data-i18n="skills.languages">Lenguajes</span></h3>
+                    <div class="skill-tags">
+                        <span class="tag">Java</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">PHP</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">XML</span>
+                    </div>
+                </div>
+
+                <div class="skill-category card">
+                    <h3><i class="fa-solid fa-layer-group"></i> <span data-i18n="skills.frameworks">Frameworks</span>
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="tag">React (Learning)</span>
+                    </div>
+                </div>
+
+                <div class="skill-category card">
+                    <h3><i class="fa-solid fa-database"></i> <span data-i18n="skills.databases">Base de Datos</span>
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="tag">SQL</span>
+                        <span class="tag">Oracle</span>
+                        <span class="tag">MariaDB</span>
+                    </div>
+                </div>
+
+                <div class="skill-category card">
+                    <h3><i class="fa-solid fa-toolbox"></i> <span data-i18n="skills.tools">Herramientas</span></h3>
+                    <div class="skill-tags">
+                        <span class="tag">Git</span>
+                        <span class="tag">IntelliJ</span>
+                        <span class="tag">PhpStorm</span>
+                        <span class="tag">PyCharm</span>
+                        <span class="tag">VS 2022</span>
+                        <span class="tag">NetBeans</span>
+                        <span class="tag">StarUML</span>
+                        <span class="tag">Talend</span>
+                        <span class="tag">Antigravity</span>
+                    </div>
+                </div>
+
+                <div class="skill-category card">
+                    <h3><i class="fa-brands fa-linux"></i> <span data-i18n="skills.os">OS</span></h3>
+                    <div class="skill-tags">
+                        <span class="tag">Windows 10</span>
+                        <span class="tag">Linux</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="fade-in">
+            <h2 class="section-title" data-i18n="projects.title">Proyectos</h2>
+            <div class="card" style="text-align: center; padding: 4rem;">
+                <i class="fa-solid fa-helmet-safety"
+                    style="font-size: 3rem; color: var(--accent-color); margin-bottom: 1rem;"></i>
+                <h3 data-i18n="projects.status">En Construcción</h3>
+                <p data-i18n="projects.desc">Pronto verás aquí mis mejores trabajos.</p>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="fade-in">
+            <h2 class="section-title" data-i18n="contact.title">Contacto</h2>
+            <div class="contact-container">
+                <p data-i18n="contact.text" style="text-align: center; margin-bottom: 2rem;">¿Creamos algo juntos?</p>
+
+                <form action="https://formsubmit.co/adrianmp333@gmail.com" method="POST" class="contact-form">
+                    <!-- Config -->
+                    <input type="hidden" name="_next" value="https://ElTitoAdri.github.io/Portfolio/thanks.html">
+                    <input type="hidden" name="_subject" value="Nuevo mensaje desde tu Portfolio!">
+                    <input type="hidden" name="_captcha" value="false">
+
+                    <div class="form-group">
+                        <label for="name" data-i18n="contact.name">Nombre</label>
+                        <input type="text" id="name" name="name" required
+                            data-i18n-placeholder="contact.namePlaceholder">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" data-i18n="contact.email">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" required
+                            data-i18n-placeholder="contact.emailPlaceholder">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" data-i18n="contact.message">Mensaje</label>
+                        <textarea id="message" name="message" rows="5" required
+                            data-i18n-placeholder="contact.msgPlaceholder"></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn" data-i18n="contact.send">Enviar Mensaje</button>
+                </form>
+
+                <div class="social-links" style="margin-top: 3rem;">
+                    <a href="https://github.com/ElTitoAdri" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/adri%C3%A1n-moreno-palma-4b123a33a/" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <a href="mailto:adrianmp333@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Adrián Moreno Palma. Built with <i class="fa-solid fa-heart"
+                style="color: var(--primary-color);"></i></p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
